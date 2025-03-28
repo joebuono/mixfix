@@ -1,0 +1,137 @@
+.audio-player {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.audio-player.unsynchronized {
+  border-left: 4px solid #ff9800;
+  opacity: 0.8;
+}
+
+.audio-player.unsynchronized .progress-bar,
+.audio-player.unsynchronized .playback-rate {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play-pause {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-pause svg {
+  width: 24px;
+  height: 24px;
+}
+
+.time-control {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.current-time,
+.duration {
+  font-size: 0.9rem;
+  color: #666;
+  min-width: 45px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  -webkit-appearance: none;
+  background: #e0e0e0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.playback-controls {
+  display: flex;
+  align-items: center;
+}
+
+.playback-rate {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.playback-rate:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.volume-control svg {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.volume-slider {
+  width: 200px;
+  /* width: 100px; */
+  height: 4px;
+  -webkit-appearance: none;
+  background: #e0e0e0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #2196f3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.keyboard-shortcuts {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.keyboard-shortcuts span {
+  background-color: #f8f9fa;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+} 
